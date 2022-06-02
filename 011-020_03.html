@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getMaxAndMin(s) {
+            const array = s.split(" ");
+            const arrayNum = array.map(Number);
+            // console.log(arrayNum);
+            const maxNum = Math.max.apply(Math, arrayNum)
+            const minNum = Math.min.apply(Math, arrayNum)
+            // console.log(maxNum);
+            // console.log(minNum);
+            const str = maxNum + " " + minNum
+            console.log(str);
+        };
+
+        console.log(getMaxAndMin("9 12 3 6 10")); // 12 3
+        console.log(getMaxAndMin("1 1 2 2 3")); // 3 1
+        console.log(getMaxAndMin("5 9 -1 10 2")); // 10 -1
+
+    </script>
+
+</body>
+
+</html>

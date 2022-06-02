@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function judgeTh(c) {
+            const str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            const strs = Array.from(str)
+            console.log(strs)
+            return strs.indexOf(c, 0) + 1
+        };
+
+        console.log(judgeTh("C")); // 3
+        console.log(judgeTh("X")); // 24
+        console.log(judgeTh("F"));
+    </script>
+</body>
+
+</html>
