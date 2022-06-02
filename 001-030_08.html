@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function formatYMD(s) {
+            const array = s.split(" ");
+            // console.log(array);
+            const YYYY = ("000" + array[0]).slice(-4);
+            // console.log(YYYY);
+            const MM = ("00" + array[1]).slice(-2);
+            const DD = ("00" + array[2]).slice(-2);
+            // console.log(DD);
+            // const str = concat(YYYY, "/", MM, "/", DD);
+            return [YYYY, MM, DD].join("/");
+
+        };
+
+        console.log(formatYMD("2021 1 1")); // 2021/01/01
+        console.log(formatYMD("2020 10 10")); // 2020/10/10
+        console.log(formatYMD("794 11 29")); // 0794/11/29
+
+    </script>
+
+</body>
+
+</html>

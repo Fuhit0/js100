@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function zeroPadding3(n) {
+            const ret = ('000' + n).slice(-3);
+            return ret;
+        };
+
+        console.log(zeroPadding3(98)); // 098
+        console.log(zeroPadding3(2)); // 002
+    </script>
+
+</body>
+
+</html>

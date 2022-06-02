@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getInitialFromName(s) {
+            const cut1 = s.substr(0, s.indexOf(' '));
+            const cut2 = s.substr(s.indexOf(' ') + 1);
+            const cut1Ini = cut1.slice(0, 1);
+            const cut2Ini = cut2.slice(0, 1);
+            return cut1Ini + "." + cut2Ini
+
+        };
+
+        console.log(getInitialFromName("Dio Brando")); // D.B
+        console.log(getInitialFromName("Pannacotta Fugo")); // P.F
+        console.log(getInitialFromName("Gyro Zeppeli")); // G.Z
+    </script>
+
+</body>
+
+</html>

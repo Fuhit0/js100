@@ -11,23 +11,13 @@
 <body>
     <script>
         function getNumberOfA(s) {
-            const array = Array.from(s)
-            console.log(array);
-            const result = 0
-            const array2 = [];
-            for (i == 0; i < array.length; i++1) {
-                if () {
-
-                }
-            }
-            const count = array.match(/A/)
-            console.log(count);
+            const count = (s.match(/A/g) || []).length;
+            return count
         };
 
         console.log(getNumberOfA("GSACADEMY")); // 2
         console.log(getNumberOfA("aAaAaA")); // 3
         console.log(getNumberOfA("JavaScript")); // 0
-
     </script>
 
 </body>
